@@ -1,0 +1,113 @@
+$youtube-color: #ff0000;
+$youtube-color-hover: #ff5151;
+
+$instagram-color: #b206c9;
+$instagram-color-hover: #cb6de7;
+
+$twitter-color: #0c75ff;
+$twitter-color-hover: #4d9aff;
+
+.box {
+  & {
+    background: var(--box-color);
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: safe;
+  }
+
+  &.youtube {
+    border-top: 10px solid $youtube-color;
+  }
+  &.instagram {
+    border-top: 10px solid $instagram-color;
+  }
+  &.twitter {
+    border-top: 10px solid $twitter-color;
+  }
+
+  .box-header,
+  .box-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-header {
+    margin-bottom: 10px;
+  }
+
+  .loading {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-body {
+    & {
+      flex-direction: column;
+    }
+
+    .number {
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .text {
+      font-size: 40px;
+    }
+  }
+
+  .box-footer {
+    & {
+      margin-top: 25px;
+    }
+    .p-btn {
+      width: 100%;
+      height: 50px;
+      border: none;
+      outline: none;
+      background: none;
+      color: var(--text-color);
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    .p-btn-youtube {
+      & {
+        background: $youtube-color;
+      }
+      &:hover {
+        background: $youtube-color-hover;
+      }
+    }
+    .p-btn-instagram {
+      & {
+        background: $instagram-color;
+      }
+      &:hover {
+        background: $instagram-color-hover;
+      }
+    }
+    .p-btn-twitter {
+      & {
+        background: $twitter-color;
+      }
+      &:hover {
+        background: $twitter-color-hover;
+      }
+    }
+  }
+
+  .text-youtube {
+    color: $youtube-color;
+  }
+  .text-instagram {
+    color: $instagram-color;
+  }
+  .text-twitter {
+    color: $twitter-color;
+  }
+}

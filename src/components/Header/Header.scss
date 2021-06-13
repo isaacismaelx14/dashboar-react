@@ -1,0 +1,41 @@
+@import "../../addons/variables.scss";
+
+.HeaderComponent {
+  & {
+    width: 100%;
+    height: $header-size;
+    display: flex;
+    background: var(--header-color-one);
+    color: var(--text-color);
+  }
+
+  .header-area {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .p-title {
+    font-size: 35px;
+  }
+
+  .link {
+    & {
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .icon:hover,
+  .icon:focus {
+    transform: scale(1.2);
+  }
+}

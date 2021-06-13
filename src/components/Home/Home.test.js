@@ -1,11 +1,11 @@
 import React from "react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import App from "./App";
+import Home from "./";
 
-describe("<App/>", () => {
+describe("<Home/>", () => {
   test("should render", () => {
-    const component = render(<App />);
-    component.getByTestId("AppElement");
+    const component = render(<Home />);
+    component.getByTestId("MainComponent");
   });
 });

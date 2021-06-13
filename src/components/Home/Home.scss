@@ -1,0 +1,20 @@
+.HomePage {
+  @import "../../addons/variables.scss";
+
+  & {
+    min-height: calc(100vh - #{$header-size});
+    background: var(--body-color-one);
+    color: var(--text-color);
+  }
+
+  .home-container {
+    position: relative;
+    bottom: 120px;
+  }
+
+  .box-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
